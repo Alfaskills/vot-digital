@@ -1,0 +1,129 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  body{
+      font-family: arial; 
+    background-image: linear-gradient(to right, #0038a8 40%, #fcd116 0.33%, #fcd116 65.66%, #ce1126 10%);
+    color: #36013F;
+    height: 350vh;
+    margin: 0;
+    place-items: center;
+    line-height: 0.3;
+    text-align: center;
+  }
+/* Stiluri comune pentru casete */
+.casetă {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border: 1px solid black;
+  }
+  
+  /* Stiluri comune pentru imagini */
+  .imagine {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Stiluri comune pentru texte */
+  .text {
+    width: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  /* Stiluri specifice pentru prima casetă */
+  .box-1 {
+    transform: rotate(5deg);
+  }
+  
+  /* Stiluri specifice pentru a doua casetă */
+  .box-2 {
+    transform: rotate(-5deg);
+  }
+  
+  /* Stiluri pentru casete la hover */
+  .box:hover {
+    width: 320px;
+    height: 220px;
+    background-color: lightblue;
+    box-shadow: 10px 10px 10px grey;
+  }
+  
+  /* Stiluri pentru label */
+  label {
+    display: block;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Stiluri pentru select */
+  select {
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
