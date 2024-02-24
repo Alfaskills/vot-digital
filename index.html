@@ -1,7 +1,8 @@
-<h1> Voteaza viitorul presedinte al tarii aici! </h1>
-<p> Logheaza-te pentru a vota! </p>
+<h1> Alege viitorul tarii aici! </h1>
+<p id="demo"> Logheaza-te pentru a vota! </p>
 
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'"
+        id="submit">Login</button>
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -11,7 +12,7 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="https://imgur.com/a/tJ4a2Ph.jpg" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
@@ -22,14 +23,12 @@ class="close" title="Close Modal">&times;</span>
       <input type="password" placeholder="Introdu CNP-ul" name="psw" required>
 
       <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Nu ma uita
-      </label>
+      
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Anuleaza</button>
-      <span class="psw">Incearca folosind <a href="#">buletinul</a></span>
+     
     </div>
   </form>
 </div>
