@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  body{
+  body {
     background-color: #f0f8ff;
   }
-  .modal{
+
+  .modal {
     background-color: #f0f8ff;
   }
 </style>
+
 <head>
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista candidati</title>
-    <link rel="stylesheet" href="stylecand.css">
-    <script src="script.js"></script>
-  
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista candidati</title>
+  <link rel="stylesheet" href="stylecand.css">
+  <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -23,11 +25,13 @@
   <p> Alegeți candidatul preferat din lista de mai jos: </p>
   <div class="container">
     <div class="box"> <img src="OIP.jpeg" alt="Image 1">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed do eiusmod tempor incididunt ut labore et dolore
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed do eiusmod tempor incididunt ut labore et
+        dolore
         magna aliqua.</p>
     </div>
-    <div class="box"> <img src="ooo.jpeg" alt="Image 2">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et dolore
+    <div class="box"> <img src="ooo.jpeg" alt="Image 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et
+        dolore
         magna aliqua.</p>
     </div>
   </div>
@@ -38,8 +42,14 @@
       <option value="opțiunea-2">Candidat 2</option>
     </form>
   </select>
-  <button type="submit">OK</button>
 
+  <button onclick="document.getElementById('id01').style.display='block'" id="submit">Login</button>
+  <div id="thanksModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>THANKS FOR VOTING</p>
+    </div>
+  </div>
 </body>
 
 </html>
