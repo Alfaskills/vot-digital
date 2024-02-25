@@ -1,34 +1,61 @@
-<h1> Alege viitorul tarii aici! </h1>
-<p id="demo"> Logheaza-te pentru a vota! </p>
+<!DOCTYPE html>
+<html lang="en">
 
-<button onclick="document.getElementById('id01').style.display='block'"
-        id="submit">Login</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alege viitorul tarii aici!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
 
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="https://imgur.com/a/tJ4a2Ph.jpg" alt="Avatar" class="avatar">
+<body>
+ 
+    <h1> Alege viitorul tarii aici! </h1>
+    <p id="demo"> Logheaza-te pentru a vota! </p>
+    
+    <button onclick="document.getElementById('id01').style.display='block'"
+            id="submit">Login</button>
+    
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <img src="https://imgur.com/a/tJ4a2Ph.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Nume</b></label>
+          <input type="text" placeholder="Introdu numele" name="uname" required>
+    
+          <label for="psw"><b>CNP</b></label>
+          <input type="password" placeholder="Introdu CNP-ul" name="psw" required>
+    
+          <a href="C:\html\hackathon\candidati.html"> Login</a>
+          
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Anuleaza</button>
+         
+        </div>
+      </form>
     </div>
-
+    
+    <!-- Add the image containers here -->
     <div class="container">
-      <label for="uname"><b>Nume</b></label>
-      <input type="text" placeholder="Introdu numele" name="uname" required>
+      <div class="image-container">
+        <img src="image1.jpg" alt="Image 1">
+      </div>
 
-      <label for="psw"><b>CNP</b></label>
-      <input type="password" placeholder="Introdu CNP-ul" name="psw" required>
-
-      <button type="submit">Login</button>
-      
+      <div class="image-container">
+        <img src="image1.jpg" alt="Image 1">
+      </div>
     </div>
+</body>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Anuleaza</button>
-     
-    </div>
-  </form>
-</div>
+</html>

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #f0f0f0;
+  height: 350vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.box p {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1 {
+  color: black;
+  line-height: 10px;
+  padding-top: 2px;
+}
+
+p {
+  line-height: 10px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}

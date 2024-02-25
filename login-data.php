@@ -17,14 +17,14 @@ $nume = $_POST['nume'];
 $cnp = $_POST['cnp'];
 
 // Check if the data already exists in the table
-$sql = "SELECT * FROM your_table WHERE nume = '$nume' AND CNP = '$cnp'";
+$sql = "SELECT * FROM login-data WHERE nume = '$nume' AND CNP = '$cnp'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "The data already exists in the table.";
 } else {
     // Insert the data into the table
-    $sql = "INSERT INTO your_table (nume, CNP) VALUES ('$nume', '$cnp')";
+    $sql = "INSERT INTO login-data (nume, CNP) VALUES ('$nume', '$cnp')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
@@ -35,4 +35,3 @@ if ($result->num_rows > 0) {
 
 // Close the connection
 $conn->close();
-?>

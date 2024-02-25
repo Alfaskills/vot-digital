@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  body{
+    background-color: #f0f8ff;
+  }
+  .modal{
+    background-color: #f0f8ff;
+  }
+</style>
 <head>
+  
     <meta charset="UTF-8">
-    <title>Candidati</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista candidati</title>
+    <link rel="stylesheet" href="stylecand.css">
+    <script src="script.js"></script>
+  
 </head>
+
 <body>
-    div class="casetă casetă-1">
-    <img class="imagine" src="OIP.jpeg" alt="Imagine 1">
-    <p class="text">Acesta este textul pentru prima casetă. Poți să-l schimbi după preferință.</p>
+  <h1> Candidati </h1>
+  <p> Alegeți candidatul preferat din lista de mai jos: </p>
+  <div class="container">
+    <div class="box"> <img src="OIP.jpeg" alt="Image 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+    <div class="box"> <img src="ooo.jpeg" alt="Image 2">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
   </div>
-  <div class="casetă casetă-2">
-    <img class="imagine" src="ooo.jpeg" alt="Imagine 2">
-    <p class="text">Acesta este textul pentru a doua casetă. Poți să-l schimbi după preferință.</p>
-  </div>
-  <label for="vot">Votează:</label>
-  <select name="vot" id="vot">
-    <option value="opțiunea-1">Opțiunea 1</option>
-    <option value="opțiunea-2">Opțiunea 2</option>
-    <option value="opțiunea-3">Opțiunea 3</option>
+  <label for="vot">Votează:</label> <select name="vot" id="vot">
+
+    <form>
+      <option value="opțiunea-1">Candidat 1</option>
+      <option value="opțiunea-2">Candidat 2</option>
+    </form>
   </select>
+  <button type="submit">OK</button>
+
 </body>
+
 </html>
-<html>
